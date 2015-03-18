@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<!-- Containr -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img class="title-logo img-responsive" src="images/logo_160.jpg" alt="Miguel Pires">
+				</div>
+				<div class="col-md-6 text-right text-uppercase">
+					<h1 class="title-super text-thin">Miguel Pires</h1>
+					<h4>Front-end Developer</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<img class="img-responsive" src="http://flickholdr.iwerk.org/1200/800">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-muted">Featured Work</h2>					
+				</div>
+			</div>
+
+			<div class="row text-centered">
+				<div class="col-md-4">
+					<img class="img-responsive" src="http://flickholdr.iwerk.org/300/200/sea,sun">
+					<h3 class="text-uppercase">Project 1</h3>
+					<p>http://www.google.com</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-responsive" src="http://flickholdr.iwerk.org/300/200/sea,sun">
+					<h3 class="text-uppercase">Project 2</h3>
+					<p>http://www.google.com</p>
+				</div>
+				<div class="col-md-4">
+					<!-- Image triggers modal -->
+					<img class="img-responsive" src="http://flickholdr.iwerk.org/300/200/sea,sun" data-toggle="modal" data-target="#project1">
+					<h3 class="text-uppercase">Project 3</h3>
+					<!-- Button trigger modal -->
+					<a href="" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#project1">
+					  More about this project...
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+		    <h4 class="modal-title" id="myModalLabel">Project 3</h4>
+		  </div>
+		  <div class="modal-body">
+		    <img class="img-responsive" src="http://flickholdr.iwerk.org/400/400/">
+		    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+		  </div>
+		  <div class="modal-footer">
+		    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+		</div>
+		</div>		
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+ 		<script src="js/bootstrap.min.js"></script>
+        <script>
+          $(function(){
+             $("#button").click(function(){
+                $('#modal').modal('show');
+             });
+          });
+        </script>
+
+	</body>
+</html>
