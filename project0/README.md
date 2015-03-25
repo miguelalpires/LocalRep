@@ -1,1 +1,1 @@
-My hello wordl project with a fullscreen landing page format
+My hello world project with a fullscreen landing page introduction
